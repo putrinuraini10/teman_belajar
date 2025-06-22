@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cream_soft">
+
+    <ImageView
+        android:id="@+id/imageViewDesainBawah"
+        android:layout_width="312dp"
+        android:layout_height="600dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-24dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="-228dp"
+        android:src="@drawable/desainbawah" />
 
     <ImageView
         android:id="@+id/draggableLogo"
@@ -13,10 +26,22 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="401dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="549dp"
         android:contentDescription="Logo"
         android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageViewDesainKanan"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-38dp"
+        android:layout_marginBottom="300dp"
+        android:contentDescription="Desain Kanan"
+        android:src="@drawable/desainkanan" />
+
 </RelativeLayout>
