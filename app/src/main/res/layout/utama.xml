@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent"
+    android:background="@color/cream_soft">
 
     <ImageView
+        android:id="@+id/draggableLogo"
         android:layout_width="100dp"
-        android:layout_height="277dp"
-        android:contentDescription="Logo Aplikasi"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="401dp"
+        android:contentDescription="Logo"
         android:src="@drawable/logo" />
-</LinearLayout>
+</RelativeLayout>

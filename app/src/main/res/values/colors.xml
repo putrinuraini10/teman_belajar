@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="fffdd0">#FFFDD0</color>
+    <!-- Cream -->
+    <color name="cream_soft">#FFF5E1</color>
+    <color name="cream_medium">#FFE8C7</color>
+    <color name="cream_dark">#FFD9A6</color>
 
+    <color name="brown_light">#A1866F</color>
+    <color name="brown_medium">#7B5E3C</color>
+    <color name="brown_dark">#4B341E</color>
+
+    <color name="soft_orange">#F2A65A</color>
+    <color name="soft_pink">#F2B5B1</color>
+    <color name="soft_gray">#B0A597</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
