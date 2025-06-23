@@ -167,3 +167,5 @@
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+
+</ScrollView>
