@@ -65,7 +65,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/video_background_learning">
+                android:background="@android:color/holo_blue_light">
 
                 <VideoView
                     android:id="@+id/videoView1"
@@ -131,7 +131,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/video_background_2">
+                android:background="@android:color/holo_blue_light">
 
                 <VideoView
                     android:id="@+id/videoView2"
@@ -173,7 +173,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/video_background_3">
+                android:background="@android:color/holo_blue_light">
 
                 <VideoView
                     android:id="@+id/videoView3"
