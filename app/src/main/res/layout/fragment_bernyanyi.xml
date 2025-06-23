@@ -34,3 +34,5 @@
                 android:textStyle="bold"
                 android:textColor="#2E7D32"
                 android:lineSpacingExtra="2dp" />
+
+        </LinearLayout>
