@@ -5,7 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cream_soft"
-    android:padding="0dp"                 tools:context=".MainActivity">
+    android:padding="0dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/desain_atas_gambar"
+        android:layout_width="202dp"
+        android:layout_height="144dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Desain Dekorasi Atas"
+        android:src="@drawable/desainatas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/info_icon"
@@ -20,14 +33,16 @@
 
     <LinearLayout
         android:id="@+id/main_content_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_width="283dp"
+        android:layout_height="503dp"
         android:gravity="center_horizontal"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562">
 
         <ImageView
             android:id="@+id/logo_kecil"
@@ -43,9 +58,9 @@
             android:layout_height="50dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/membaca"
+            android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:gravity="center"/>
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btn_belajar_angka"
@@ -53,9 +68,9 @@
             android:layout_height="50dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/belajarangka"
+            android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:gravity="center"/>
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btn_mengenal_warna"
@@ -63,18 +78,18 @@
             android:layout_height="50dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/mengenalwarna"
+            android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:gravity="center"/>
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btn_bernyanyi"
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:background="@drawable/bernyanyi"
+            android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:gravity="center"/>
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -98,8 +113,9 @@
         android:src="@drawable/desainkanan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.992"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.466" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
