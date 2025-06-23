@@ -48,7 +48,10 @@ class BernyanyiFragment : Fragment() {
         return view
     }
 
-    companion object {
+    private fun setupVideo(videoView: VideoView, playButton: ImageView, videoResId: Int) {
+
+
+        companion object {
         /**
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
