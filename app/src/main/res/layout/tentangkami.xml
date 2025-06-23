@@ -33,66 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/main_content_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/logo_kecil"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="40dp"
-            android:contentDescription="Logo Teman Belajarku"
-            android:src="@drawable/logo" />
-
-        <Button
-            android:id="@+id/btn_membaca"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/membaca"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:gravity="center"/>
-
-        <Button
-            android:id="@+id/btn_belajar_angka"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/belajarangka"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:gravity="center"/>
-
-        <Button
-            android:id="@+id/btn_mengenal_warna"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/mengenalwarna"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:gravity="center"/>
-
-        <Button
-            android:id="@+id/btn_bernyanyi"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:background="@drawable/bernyanyi"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:gravity="center"/>
-
-    </LinearLayout>
-
     <ImageView
         android:id="@+id/desain_bawah"
         android:layout_width="237dp"
