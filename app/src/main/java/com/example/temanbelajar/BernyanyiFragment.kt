@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.MediaController
 import android.widget.VideoView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -52,6 +53,9 @@ class BernyanyiFragment : Fragment() {
         val uri = Uri.parse("android.resource://${requireActivity().packageName}/$videoResId")
         videoView.setVideoURI(uri)
 
+        val mediaController = MediaController(requireContext())
+        mediaController.setAnchorView(videoView)
+        videoView.setMediaController(mediaController)
 
     }
 
