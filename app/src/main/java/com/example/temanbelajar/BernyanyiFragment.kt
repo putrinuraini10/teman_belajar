@@ -32,7 +32,7 @@ class BernyanyiFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        val view = inflater.inflate(R.layout.fragment_bernyanyi, container, false)
 
     companion object {
         /**
