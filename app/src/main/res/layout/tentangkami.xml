@@ -34,6 +34,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/kami_icon"
+        android:layout_width="590dp"
+        android:layout_height="754dp"
+        android:contentDescription="Tentang Kami"
+        android:src="@drawable/kami"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <ImageView
         android:id="@+id/desain_bawah"
         android:layout_width="237dp"
         android:layout_height="176dp"
