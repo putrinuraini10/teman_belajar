@@ -1,59 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
-    android:background="@color/cream_soft"  tools:context=".MainActivity">
+    android:background="@color/cream_soft"
+    tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/logo_kecil"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="40dp"
-        android:contentDescription="Logo Teman Belajarku"
-        android:src="@drawable/logo" />
+        android:id="@+id/info_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:contentDescription="Informasi Aplikasi"
+        android:src="@drawable/informasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_belajar_angka"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/belajarangka"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:gravity="center"/>
+    <LinearLayout
+        android:id="@+id/main_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <Button
-        android:id="@+id/btn_mengenal_warna"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/mengenalwarna"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:gravity="center"/>
+        <ImageView
+            android:id="@+id/logo_kecil"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="Logo Teman Belajarku"
+            android:src="@drawable/logo" />
 
-    <Button
-        android:id="@+id/btn_membaca"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/membaca"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:gravity="center"/>
+        <Button
+            android:id="@+id/btn_membaca"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/membaca"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"/>
 
-    <Button
-        android:id="@+id/btn_bernyanyi"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        <Button
+            android:id="@+id/btn_belajar_angka"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/belajarangka"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_mengenal_warna"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/mengenalwarna"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_bernyanyi"
+            android:layout_width="250dp"
+            android://layout_height="50dp"
         android:background="@drawable/bernyanyi"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:gravity="center"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
