@@ -50,6 +50,8 @@ class BernyanyiFragment : Fragment() {
 
     private fun setupVideo(videoView: VideoView, playButton: ImageView, videoResId: Int) {
         val uri = Uri.parse("android.resource://${requireActivity().packageName}/$videoResId")
+        videoView.setVideoURI(uri)
+
 
     }
 
