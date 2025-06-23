@@ -45,7 +45,7 @@ class BernyanyiFragment : Fragment() {
         setupVideo(videoView2, playButton2, R.raw.lagupenjumlahan)
         setupVideo(videoView3, playButton3, R.raw.mengenalangka)
 
-
+        return view
     }
 
     companion object {
