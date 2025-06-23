@@ -57,6 +57,12 @@ class BernyanyiFragment : Fragment() {
         mediaController.setAnchorView(videoView)
         videoView.setMediaController(mediaController)
 
+        playButton.setOnClickListener {
+            playButton.visibility = View.GONE
+            videoView.start()
+        }
+
+
     }
 
 
