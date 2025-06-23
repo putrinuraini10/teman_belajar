@@ -68,17 +68,20 @@
                 android:background="@drawable/video_background_1">
 
                 <VideoView
-                    android:id="@+id/videoView1"
+                    android:id="@+id/laguhuruf"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_centerInParent="true" />
 
                 <ImageView
+                    android:id="@+id/playButton1"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/ic_play_circle"
                     android:layout_centerInParent="true"
-                    android:alpha="0.8" />
+                    android:alpha="0.9"
+                    android:clickable="true"
+                    android:focusable="true" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
