@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/desain_atas_gambar"
-        android:layout_width="336dp"
-        android:layout_height="220dp"
+        android:layout_width="303dp"
+        android:layout_height="179dp"
         android:adjustViewBounds="true"
         android:contentDescription="Desain Dekorasi Atas"
         android:src="@drawable/desainatas"
