@@ -34,7 +34,10 @@ class MainActivity : AppCompatActivity() {
             // Jika Anda ingin menambahkan audio di sini, tambahkan: playAudio(R.raw.nama_audio_warna)
         }
         btnBernyanyi.setOnClickListener {
-            Toast.makeText(this, "Tombol Bernyanyi diklik", Toast.LENGTH_SHORT).show()
+            supportFragmentManager.beginTransaction()
+                .replace(android.R.id.content, BernyanyiFragment()) // Ganti layout utama dengan fragment
+                .addToBackStack(null)
+                .commit()
             // Jika Anda ingin menambahkan audio di sini, tambahkan: playAudio(R.raw.nama_audio_bernyanyi)
         }
     }
