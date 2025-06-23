@@ -161,3 +161,6 @@
                     android:src="@drawable/ic_play_circle"
                     android:layout_centerInParent="true"
                     android:alpha="0.8" />
+
+            </RelativeLayout>
+
