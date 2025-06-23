@@ -1,4 +1,19 @@
 package com.example.temanbelajar
 
-class tentangkami {
+import android.os.Bundle
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+
+class tentangkami : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.tentangkami)
+
+        val kembaliIcon: ImageView = findViewById(R.id.kembali_icon)
+
+        kembaliIcon.setOnClickListener {
+            finish()
+        }
+    }
 }
