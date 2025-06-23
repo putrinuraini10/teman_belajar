@@ -70,12 +70,24 @@
         <Button
             android:id="@+id/btn_bernyanyi"
             android:layout_width="250dp"
-            android://layout_height="50dp"
-        android:background="@drawable/bernyanyi"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:gravity="center"/>
+            android:layout_height="50dp"
+            android:background="@drawable/bernyanyi"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"/>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/desain_bawah"
+        android:layout_width="237dp"
+        android:layout_height="176dp"
+        android:contentDescription="Desain Dekorasi Bawah"
+        android:scaleType="fitXY"
+        android:src="@drawable/desainbawah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
