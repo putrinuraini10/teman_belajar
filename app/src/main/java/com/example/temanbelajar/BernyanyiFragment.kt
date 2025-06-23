@@ -34,6 +34,15 @@ class BernyanyiFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_bernyanyi, container, false)
 
+        videoView1 = view.findViewById(R.id.videoView1)
+        videoView2 = view.findViewById(R.id.videoView2)
+        videoView3 = view.findViewById(R.id.videoView3)
+        playButton1 = view.findViewById(R.id.playButton1)
+        playButton2 = view.findViewById(R.id.playButton2)
+        playButton3 = view.findViewById(R.id.playButton3)
+
+    }
+
     companion object {
         /**
          * Use this factory method to create a new instance of
