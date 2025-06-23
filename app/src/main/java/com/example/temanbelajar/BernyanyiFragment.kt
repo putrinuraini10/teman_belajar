@@ -62,6 +62,9 @@ class BernyanyiFragment : Fragment() {
             videoView.start()
         }
 
+        videoView.setOnCompletionListener {
+            playButton.visibility = View.VISIBLE
+        }
 
     }
 
