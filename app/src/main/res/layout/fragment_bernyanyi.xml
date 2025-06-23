@@ -65,10 +65,10 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/video_background_1">
+                android:background="@drawable/video_background_learning">
 
                 <VideoView
-                    android:id="@+id/laguhuruf"
+                    android:id="@+id/videoView1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_centerInParent="true" />
@@ -111,6 +111,7 @@
 
         </androidx.cardview.widget.CardView>
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -132,16 +133,26 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/video_background_2">
 
+                <VideoView
+                    android:id="@+id/videoView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
                 <ImageView
+                    android:id="@+id/playButton2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/ic_play_circle"
                     android:layout_centerInParent="true"
-                    android:alpha="0.8" />
+                    android:alpha="0.9"
+                    android:clickable="true"
+                    android:focusable="true" />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -164,12 +175,21 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/video_background_3">
 
+                <VideoView
+                    android:id="@+id/videoView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
                 <ImageView
+                    android:id="@+id/playButton3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/ic_play_circle"
                     android:layout_centerInParent="true"
-                    android:alpha="0.8" />
+                    android:alpha="0.9"
+                    android:clickable="true"
+                    android:focusable="true" />
 
             </RelativeLayout>
 
