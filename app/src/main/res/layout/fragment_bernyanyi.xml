@@ -67,6 +67,12 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/video_background_1">
 
+                <VideoView
+                    android:id="@+id/videoView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -169,3 +175,4 @@
     </LinearLayout>
 
 </ScrollView>
+
