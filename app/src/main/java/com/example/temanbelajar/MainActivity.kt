@@ -7,6 +7,7 @@ import android.widget.Toast
 import android.media.MediaPlayer
 import android.widget.ImageView
 import android.content.Intent
+import androidx.fragment.app.FragmentManager
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,18 +26,26 @@ class MainActivity : AppCompatActivity() {
         btnMembaca.setOnClickListener {
             playAudio(R.raw.membaca)
             Toast.makeText(this, "Memutar audio Membaca", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, membaca::class.java) // Menambahkan ini jika btnMembaca ke membaca Activity
+            val intent = Intent(this, membaca::class.java)
             startActivity(intent)
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left) // Animasi saat masuk
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
 
         btnBelajarAngka.setOnClickListener {
-            Toast.makeText(this, "Tombol Belajar Angka diklik", Toast.LENGTH_SHORT).show()
+            playAudio(R.raw.belajarangka)
+            Toast.makeText(this, "Memutar audio Belajar Angka", Toast.LENGTH_SHORT).show()
+            // Optional: Tambahkan Intent untuk Activity Belajar Angka di sini
         }
+
         btnMengenalWarna.setOnClickListener {
-            Toast.makeText(this, "Tombol Mengenal Warna diklik", Toast.LENGTH_SHORT).show()
+            playAudio(R.raw.mengenalwarna)
+            Toast.makeText(this, "Memutar audio Mengenal Warna", Toast.LENGTH_SHORT).show()
+            // Optional: Tambahkan Intent untuk Activity Mengenal Warna di sini
         }
+
         btnBernyanyi.setOnClickListener {
+            playAudio(R.raw.bernyanyi)
+            Toast.makeText(this, "Memutar audio Bernyanyi", Toast.LENGTH_SHORT).show()
             supportFragmentManager.beginTransaction()
                 .replace(android.R.id.content, BernyanyiFragment())
                 .addToBackStack(null)
@@ -46,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         infoIcon.setOnClickListener {
             val intent = Intent(this, tentangkami::class.java)
             startActivity(intent)
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left) // Animasi saat masuk
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }
 
