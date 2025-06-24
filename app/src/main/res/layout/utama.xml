@@ -55,7 +55,7 @@
         <Button
             android:id="@+id/btn_membaca"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="64dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/membaca"
             android:textColor="@android:color/white"
@@ -65,7 +65,7 @@
         <Button
             android:id="@+id/btn_belajar_angka"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="64dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/belajarangka"
             android:textColor="@android:color/white"
@@ -75,7 +75,7 @@
         <Button
             android:id="@+id/btn_mengenal_warna"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="64dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/mengenalwarna"
             android:textColor="@android:color/white"
@@ -85,7 +85,7 @@
         <Button
             android:id="@+id/btn_bernyanyi"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="64dp"
             android:background="@drawable/bernyanyi"
             android:textColor="@android:color/white"
             android:textSize="18sp"
