@@ -216,6 +216,16 @@
                 android:scaleType="centerInside"
                 android:contentDescription="Huruf O" />
 
+            <ImageButton
+                android:id="@+id/btn_huruf_p"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufp"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf P" />
+
         </GridLayout>
 
     </LinearLayout>
