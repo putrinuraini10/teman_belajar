@@ -28,6 +28,11 @@
             android:label="Tentang Kami">
         </activity>
 
+        <activity
+            android:name=".membaca"  android:exported="false"
+            android:label="Membaca">
+        </activity>
+
     </application>
 
 </manifest>

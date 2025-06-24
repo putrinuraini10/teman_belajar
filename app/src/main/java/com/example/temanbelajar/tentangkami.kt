@@ -17,6 +17,12 @@ class tentangkami : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right) // Animasi saat kembali
         }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right) // Animasi saat tombol kembali fisik ditekan
     }
 }
