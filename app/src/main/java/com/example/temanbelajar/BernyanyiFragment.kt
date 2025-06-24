@@ -42,7 +42,7 @@ class BernyanyiFragment : Fragment() {
         playButton2 = view.findViewById(R.id.playButton2)
         playButton3 = view.findViewById(R.id.playButton3)
 
-        setupVideo(videoView1, playButton1, R.raw.laguhuruf)
+        setupVideo(videoView1, playButton1, R.raw.laguabc)
         setupVideo(videoView2, playButton2, R.raw.lagupenjumlahan)
         setupVideo(videoView3, playButton3, R.raw.mengenalangka)
 
