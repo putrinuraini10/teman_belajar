@@ -24,7 +24,6 @@
                 android:src="@drawable/logo"
                 android:layout_marginEnd="12dp" />
 
-
         </LinearLayout>
 
         <TextView
