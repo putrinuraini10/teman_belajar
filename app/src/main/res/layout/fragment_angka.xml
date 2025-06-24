@@ -234,6 +234,16 @@
                 android:clickable="true"
                 android:focusable="true" />
 
+            <ImageButton
+                android:id="@+id/btn_100000"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/angka100000"
+                android:src="@drawable/angka100000"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:focusable="true" />
+
         </LinearLayout>
 
     </LinearLayout>
