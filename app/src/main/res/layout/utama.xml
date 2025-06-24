@@ -53,7 +53,7 @@
             android:src="@drawable/logo" />
 
         <Button
-            android:id="@+id/btn_membaca"
+            android:id="@+id/btnmembaca"
             android:layout_width="250dp"
             android:layout_height="64dp"
             android:layout_marginBottom="20dp"
@@ -63,7 +63,7 @@
             android:gravity="center"/>
 
         <Button
-            android:id="@+id/btn_belajar_angka"
+            android:id="@+id/btn_belajarangka"
             android:layout_width="250dp"
             android:layout_height="64dp"
             android:layout_marginBottom="20dp"
@@ -73,7 +73,7 @@
             android:gravity="center"/>
 
         <Button
-            android:id="@+id/btn_mengenal_warna"
+            android:id="@+id/btn_mengenalwarna"
             android:layout_width="250dp"
             android:layout_height="64dp"
             android:layout_marginBottom="20dp"
@@ -83,7 +83,7 @@
             android:gravity="center"/>
 
         <Button
-            android:id="@+id/btn_bernyanyi"
+            android:id="@+id/btnbernyanyi"
             android:layout_width="250dp"
             android:layout_height="64dp"
             android:background="@drawable/bernyanyi"
