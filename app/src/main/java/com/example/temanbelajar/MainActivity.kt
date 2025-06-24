@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         btnMembaca.setOnClickListener {
             playAudio(R.raw.membaca)
             Toast.makeText(this, "Memutar audio Membaca", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, membaca::class.java) // Menambahkan ini jika btnMembaca ke membaca Activity
+            startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left) // Animasi saat masuk
         }
 
         btnBelajarAngka.setOnClickListener {
@@ -43,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         infoIcon.setOnClickListener {
             val intent = Intent(this, tentangkami::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left) // Animasi saat masuk
         }
     }
 
