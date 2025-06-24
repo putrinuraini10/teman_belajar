@@ -116,6 +116,7 @@
                 android:scaleType="centerInside"
                 android:contentDescription="Huruf E" />
 
+
         </GridLayout>
 
     </LinearLayout>
