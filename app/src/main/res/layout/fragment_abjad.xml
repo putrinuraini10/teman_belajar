@@ -296,6 +296,16 @@
                 android:scaleType="centerInside"
                 android:contentDescription="Huruf W" />
 
+            <ImageButton
+                android:id="@+id/btn_huruf_x"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufx"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf X" />
+
         </GridLayout>
 
     </LinearLayout>
