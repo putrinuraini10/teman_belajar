@@ -59,6 +59,15 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="32dp" />
 
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="7"
+            android:layout_marginHorizontal="16dp">
+
+        </GridLayout>
+
     </LinearLayout>
 
 </ScrollView>
