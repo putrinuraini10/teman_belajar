@@ -246,6 +246,66 @@
                 android:scaleType="centerInside"
                 android:contentDescription="Huruf R" />
 
+            <ImageButton
+                android:id="@+id/btn_huruf_s"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufs"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf S" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_t"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/huruft"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf T" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_u"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufu"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf U" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_v"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufv"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf V" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_w"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufw"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf W" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_x"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufx"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf X" />
+
         </GridLayout>
 
     </LinearLayout>
