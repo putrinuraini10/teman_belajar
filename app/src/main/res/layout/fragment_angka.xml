@@ -38,6 +38,26 @@
         android:orientation="vertical"
         android:gravity="center">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_1"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/angka1"
+                android:src="@drawable/angka1"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>
