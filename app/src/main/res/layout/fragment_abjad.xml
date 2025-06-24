@@ -312,6 +312,16 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp" />
 
+            <ImageButton
+                android:id="@+id/btn_huruf_y"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufy"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf Y" />
+
         </GridLayout>
 
     </LinearLayout>
