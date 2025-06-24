@@ -86,6 +86,7 @@
                 android:scaleType="centerInside"
                 android:contentDescription="Huruf B" />
 
+
         </GridLayout>
 
     </LinearLayout>
