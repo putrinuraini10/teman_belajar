@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background_pink">
+    android:background="@color/background_pink"
     android:padding="16dp">
 
     <LinearLayout
@@ -15,9 +15,9 @@
 
         <ImageView
             android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/logo"
-            android:layout_marginEnd="8dp" />
+            android="layout_height="40dp"
+        android:src="@drawable/logo"
+        android:layout_marginEnd="8dp" />
 
     </LinearLayout>
 
@@ -50,7 +50,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka1"
-                android:src="@drawable/angka1"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -61,7 +60,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka2"
-                android:src="@drawable/angka2"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -72,7 +70,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka3"
-                android:src="@drawable/angka3"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -83,7 +80,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka4"
-                android:src="@drawable/angka4"
                 android:scaleType="centerInside"
                 android:clickable="true"
                 android:focusable="true" />
@@ -102,7 +98,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka5"
-                android:src="@drawable/angka5"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -113,7 +108,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka6"
-                android:src="@drawable/angka6"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -124,7 +118,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka7"
-                android:src="@drawable/angka7"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -135,7 +128,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka8"
-                android:src="@drawable/angka8"
                 android:scaleType="centerInside"
                 android:clickable="true"
                 android:focusable="true" />
@@ -154,7 +146,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka9"
-                android:src="@drawable/angka9"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -165,7 +156,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka10"
-                android:src="@drawable/angka10"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -176,7 +166,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka11"
-                android:src="@drawable/angka11"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -184,13 +173,12 @@
 
             <ImageButton
                 android:id="@+id/btn_20"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
+                android:layout_width="85dp"
+                android:layout_height="83dp"
                 android:background="@drawable/angka20"
-                android:src="@drawable/angka20"
-                android:scaleType="centerInside"
                 android:clickable="true"
-                android:focusable="true" />
+                android:focusable="true"
+                android:scaleType="fitXY" />
 
         </LinearLayout>
 
@@ -206,7 +194,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka100"
-                android:src="@drawable/angka100"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -217,7 +204,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka1000"
-                android:src="@drawable/angka1000"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -228,7 +214,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka10000"
-                android:src="@drawable/angka10000"
                 android:scaleType="centerInside"
                 android:layout_marginEnd="16dp"
                 android:clickable="true"
@@ -239,7 +224,6 @@
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/angka100000"
-                android:src="@drawable/angka100000"
                 android:scaleType="centerInside"
                 android:clickable="true"
                 android:focusable="true" />
