@@ -1,11 +1,13 @@
-package com.example.temanbelajar // Sesuaikan dengan nama package Anda
+package com.example.temanbelajar
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.Button
 import androidx.fragment.app.Fragment
 
 class AbjadFragment : Fragment() {
@@ -22,6 +24,7 @@ class AbjadFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupLetterButtons(view)
+        setupExitButton(view)
     }
 
     private fun setupLetterButtons(view: View) {
@@ -102,6 +105,14 @@ class AbjadFragment : Fragment() {
 
         val btnZ = view.findViewById<ImageButton>(R.id.btn_huruf_z)
         btnZ.setOnClickListener { playAudio(R.raw.hurufz) }
+    }
+
+    private fun setupExitButton(view: View) {
+        val btnKeluar: Button = view.findViewById(R.id.btn_keluar)
+        btnKeluar.setOnClickListener {
+            val intent = Intent(activity, membaca::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun playAudio(audioResId: Int) {
