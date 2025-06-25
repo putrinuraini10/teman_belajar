@@ -23,4 +23,7 @@
     <color name="text_dark">#2D3748</color>
 
     <color name="background_pink">#FFF0F5</color>
-    <color name="light_pink_almost_white">#FFF0F5</color> </resources>
+    <color name="light_pink_almost_white">#FFF0F5</color>
+
+    <color name="dark_blue">#1E3A8A</color>
+</resources>
