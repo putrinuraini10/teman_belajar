@@ -24,6 +24,7 @@
 
     <color name="background_pink">#FFF0F5</color>
     <color name="background_start">#FFF5F0</color>
+    <color name="background_end">#FFE8DD</color>
     <color name="light_pink_almost_white">#FFF0F5</color>
 
     <color name="dark_blue">#1E3A8A</color>
