@@ -14,7 +14,15 @@
         android:gravity="start|center_vertical"
         android:layout_marginBottom="32dp">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:gravity="center">
 
+        </LinearLayout>
 
     </LinearLayout>
 
