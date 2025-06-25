@@ -28,4 +28,5 @@
     <color name="dark_blue">#1E3A8A</color>
     <color name="dark_blue_pressed">#1E40AF</color>
     <color name="dark_gray">#374151</color>
+    <color name="dark_gray_pressed">#4B5563</color>
 </resources>
