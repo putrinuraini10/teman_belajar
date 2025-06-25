@@ -143,7 +143,7 @@
                 android:textColor="@color/orange_light"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:background="@drawable/word_option_selected_background"
+                android:background="@drawable/persegi"
                 android:gravity="center"
                 android:clickable="true"
                 android:focusable="true" />
