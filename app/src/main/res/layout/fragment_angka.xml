@@ -236,13 +236,13 @@
         android:id="@+id/btn_keluar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/keluar_button_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
         android:text="Keluar"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:fontFamily="sans-serif-medium"
-        android:background="@drawable/keluar_button_bg"
-        android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:focusable="true" />
+        android:textSize="16sp" />
 
 </LinearLayout>
