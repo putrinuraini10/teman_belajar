@@ -31,4 +31,5 @@
     <color name="dark_gray_pressed">#4B5563</color>
 
     <color name="orange">#F97316</color>
+    <color name="orange_light">#FB923C</color>
 </resources>
