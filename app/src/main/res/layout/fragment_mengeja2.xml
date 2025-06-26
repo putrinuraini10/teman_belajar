@@ -88,6 +88,18 @@
             android:gravity="center"
             android:layout_marginBottom="50dp">
 
+            <TextView
+                android:id="@+id/letter_be"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="be"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/persegi"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginEnd="4dp" />
+
         </LinearLayout>
 
     </LinearLayout>
