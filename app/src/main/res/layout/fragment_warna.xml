@@ -417,7 +417,14 @@
                         android:background="#FFD700"
                         android:layout_marginBottom="4dp" />
 
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kuning\nEmas"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:gravity="center"
+                        android:maxLines="2" />
 
                 </LinearLayout>
 
