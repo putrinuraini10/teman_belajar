@@ -32,18 +32,18 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:background="@drawable/purple_border_background"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:gravity="center">
+
 
             <TextView
-                android:id="@+id/title_mengenal_warna"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mengenal Warna"
-                android:textSize="24sp"
-                android:textColor="#333333"
-                android:fontFamily="sans-serif-bold"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp" />
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="48dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
