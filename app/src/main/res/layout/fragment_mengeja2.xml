@@ -82,71 +82,82 @@
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_width="411dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="60dp"
             android:gravity="center"
-            android:layout_marginBottom="50dp">
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/letter_be"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:text="be"
-                android:textSize="18sp"
-                android:textColor="#FFFFFF"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/persegi"
-                android:gravity="center"
                 android:fontFamily="sans-serif-medium"
-                android:layout_marginEnd="4dp" />
+                android:gravity="center"
+                android:text="be"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/letter_sa"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:text="sa"
-                android:textSize="18sp"
-                android:textColor="#FFFFFF"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/persegi"
-                android:gravity="center"
                 android:fontFamily="sans-serif-medium"
-                android:layout_marginEnd="4dp" />
+                android:gravity="center"
+                android:text="sa"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/letter_ber"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:text="ber"
-                android:textSize="18sp"
-                android:textColor="#FFFFFF"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/persegi"
-                android:gravity="center"
                 android:fontFamily="sans-serif-medium"
-                android:layout_marginEnd="4dp" />
+                android:gravity="center"
+                android:text="ber"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/letter_jar"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:text="jar"
-                android:textSize="18sp"
-                android:textColor="#FFFFFF"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/persegi"
-                android:gravity="center"
                 android:fontFamily="sans-serif-medium"
-                android:layout_marginEnd="4dp" />
+                android:gravity="center"
+                android:text="jar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/letter_ma"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:text="ma"
-                android:textSize="18sp"
-                android:textColor="#FFFFFF"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/persegi"
-                android:gravity="center"
                 android:fontFamily="sans-serif-medium"
-                android:layout_marginEnd="4dp" />
+                android:gravity="center"
+                android:text="ma"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/letter_la"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/persegi"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="la"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
