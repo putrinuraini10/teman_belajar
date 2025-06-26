@@ -34,6 +34,17 @@
             android:background="@drawable/purple_border_background"
             android:padding="16dp">
 
+            <TextView
+                android:id="@+id/title_mengenal_warna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mengenal Warna"
+                android:textSize="24sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif-bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp" />
+
         </LinearLayout>
 
     </LinearLayout>
