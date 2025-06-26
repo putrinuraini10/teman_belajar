@@ -479,6 +479,17 @@
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/btn_keluar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Keluar"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/keluar_button_bg"
+                android:fontFamily="sans-serif-medium"
+                android:elevation="4dp" />
+
         </LinearLayout>
 
     </LinearLayout>
