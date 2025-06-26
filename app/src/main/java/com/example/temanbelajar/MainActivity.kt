@@ -84,6 +84,13 @@ class MainActivity : AppCompatActivity() {
         btnMengenalWarna.setOnClickListener {
             playAudio(R.raw.mengenalwarna)
             Toast.makeText(this, "Memutar audio Mengenal Warna", Toast.LENGTH_SHORT).show()
+            mainContentLayout.visibility = View.GONE
+            fragmentContainer.visibility = View.VISIBLE
+
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, WarnaFragment())
+                .addToBackStack(null)
+                .commit()
         }
 
         btnBernyanyi.setOnClickListener {
