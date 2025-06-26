@@ -137,8 +137,8 @@
 
             <TextView
                 android:id="@+id/tv_word_6"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:text="bu"
                 android:textColor="@color/white"
                 android:textSize="18sp"
