@@ -31,7 +31,6 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="@drawable/purple_border_background"
             android:padding="16dp"
             android:gravity="center">
 

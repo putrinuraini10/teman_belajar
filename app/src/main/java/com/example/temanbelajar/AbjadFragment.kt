@@ -110,8 +110,10 @@ class AbjadFragment : Fragment() {
     private fun setupExitButton(view: View) {
         val btnKeluar: Button = view.findViewById(R.id.btn_keluar)
         btnKeluar.setOnClickListener {
-            val intent = Intent(activity, membaca::class.java)
+            val intent = Intent(requireActivity(), MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
+            requireActivity().finish()
         }
     }
 
