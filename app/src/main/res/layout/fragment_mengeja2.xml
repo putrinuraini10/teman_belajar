@@ -1,166 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F0E8">
-
-    <ImageView
-        android:id="@+id/cloud_top_right"
-        android:layout_width="129dp"
-        android:layout_height="93dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="-9dp"
-        android:layout_marginEnd="-11dp"
-        android:alpha="0.6"
-        android:src="@drawable/desainatas" />
-
-    <ImageView
-        android:id="@+id/cloud_right"
-        android:layout_width="83dp"
-        android:layout_height="156dp"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="0dp"
-        android:alpha="0.5"
-        android:src="@drawable/desainkanan" />
-
-    <ImageView
-        android:id="@+id/cloud_bottom_left"
-        android:layout_width="134dp"
-        android:layout_height="103dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="0dp"
-        android:alpha="0.4"
-        android:src="@drawable/desainbawah" />
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="24dp">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_marginBottom="32dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/logo_background"
+            android:padding="8dp"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="40dp">
+            android:gravity="center">
 
             <ImageView
-                android:id="@+id/logo_owl"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/logo" />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/title_mengeja"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mengeja"
-            android:textSize="32sp"
-            android:textColor="#333333"
-            android:fontFamily="sans-serif-bold"
-            android:layout_marginBottom="50dp" />
-
-        <ImageView
-            android:id="@+id/speaker_icon"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/speaker"
-            android:background="@drawable/circle_background"
-            android:padding="20dp"
-            android:layout_marginBottom="60dp"
-            android:clickable="true"
-            android:focusable="true" />
-
-
-        <LinearLayout
-            android:layout_width="411dp"
-            android:layout_height="54dp"
-            android:layout_marginBottom="60dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/letter_be"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/persegi"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="be"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/letter_sa"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/persegi"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="sa"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/letter_ber"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/persegi"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="ber"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/letter_jar"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/persegi"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="jar"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/letter_ma"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/persegi"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="ma"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/letter_la"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:background="@drawable/persegi"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="la"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:layout_marginEnd="4dp" />
 
         </LinearLayout>
 
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mengeja"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="48dp" />
+
+        <ImageView
+            android:id="@+id/iv_speaker"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/speaker"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginBottom="64dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="60dp">
+
+            <TextView
+                android:id="@+id/tv_word_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="be"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/persegi"
+                android:gravity="center"
+                android:layout_marginEnd="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tv_word_2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="sa"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/persegi"
+                android:gravity="center"
+                android:layout_marginEnd="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tv_word_3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="ber"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/persegi"
+                android:gravity="center"
+                android:layout_marginEnd="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tv_word_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="jar"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/persegi"
+                android:gravity="center"
+                android:layout_marginEnd="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tv_word_5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="ma"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/persegi"
+                android:gravity="center"
+                android:layout_marginEnd="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tv_word_6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="la"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/persegi"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_koreksi"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Koreksi"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_koreksi_background"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
