@@ -52,6 +52,16 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+        supportFragmentManager.addOnBackStackChangedListener {
+            if (supportFragmentManager.backStackEntryCount == 0) {
+                mainContentLayout.visibility = View.VISIBLE
+                fragmentContainer.visibility = View.GONE
+            } else {
+                mainContentLayout.visibility = View.GONE
+                fragmentContainer.visibility = View.VISIBLE
+            }
+        }
+
         btnMembaca.setOnClickListener {
             playAudio(R.raw.membaca)
             Toast.makeText(this, "Memutar audio Membaca", Toast.LENGTH_SHORT).show()

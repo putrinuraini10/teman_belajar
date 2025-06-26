@@ -37,8 +37,10 @@ class BernyanyiFragment : Fragment() {
 
         // Ubah jalur video untuk videoPath2 menjadi lagupenjumlahan
         val videoPath1 = "android.resource://" + requireContext().packageName + "/" + R.raw.laguabc
-        val videoPath2 = "android.resource://" + requireContext().packageName + "/" + R.raw.lagupenjumlahan // <-- INI YANG DIUBAH
-        val videoPath3 = "android.resource://" + requireContext().packageName + "/" + R.raw.mengenalangka
+        val videoPath2 =
+            "android.resource://" + requireContext().packageName + "/" + R.raw.lagupenjumlahan // <-- INI YANG DIUBAH
+        val videoPath3 =
+            "android.resource://" + requireContext().packageName + "/" + R.raw.mengenalangka
 
         setupVideoPlayer(videoView1, playButton1, videoPath1)
         setupVideoPlayer(videoView2, playButton2, videoPath2)
