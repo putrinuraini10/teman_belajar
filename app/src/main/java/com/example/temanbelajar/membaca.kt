@@ -10,6 +10,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentContainerView
+import androidx.appcompat.app.AlertDialog // Import AlertDialog here
 
 class membaca : AppCompatActivity() {
 
@@ -26,7 +27,7 @@ class membaca : AppCompatActivity() {
 
         val btnHurufAbjad: Button = findViewById(R.id.btn_hurufabjad)
         val btnMengeja: Button = findViewById(R.id.btn_mengeja)
-        val infoIcon: ImageView = findViewById(R.id.info_icon)
+        val infoIcon: ImageView = findViewById(R.id.info_icon) // Get reference to infoIcon
 
         btnHurufAbjad.setOnClickListener {
             playAudioAndNavigate(R.raw.hurufabjad, AbjadFragment())
@@ -36,12 +37,12 @@ class membaca : AppCompatActivity() {
             playAudio(R.raw.mengeja)
         }
 
+        // --- START: Added code for infoIcon click listener ---
         infoIcon.setOnClickListener {
-            val intent = Intent(this, tentangkami::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            showAboutUsPopup() // Call the function to show the popup
         }
-    }
+        // --- END: Added code for infoIcon click listener ---
+    } // onCreate ends here. Make sure it's closed correctly.
 
     private fun playAudio(audioResId: Int) {
         mediaPlayer?.release()
@@ -75,6 +76,28 @@ class membaca : AppCompatActivity() {
             .commit()
     }
 
+    // --- START: Added function for the popup ---
+    private fun showAboutUsPopup() {
+        val title = "Tentang kami"
+        val message = """
+            Aplikasi ini merupakan aplikasi edukasi untuk anak-anak yang bertujuan membantu belajar mengeja, mengenal huruf abjad, angka, warna, dan bernyanyi sambil belajar.
+
+            Dibuat oleh:
+            Putri Nuraini
+            Hikmatun Nazilah
+            Clara Putri Andini
+        """.trimIndent() // Using trimIndent() for cleaner multi-line string
+
+        AlertDialog.Builder(this)
+            .setTitle(title)
+            .setMessage(message)
+            .setPositiveButton("OK") { dialog, _ ->
+                dialog.dismiss() // Dismiss the dialog when "OK" is clicked
+            }
+            .show()
+    }
+    // --- END: Added function for the popup ---
+
     override fun onBackPressed() {
         if (supportFragmentManager.backStackEntryCount > 0) {
             supportFragmentManager.popBackStack()
@@ -84,6 +107,7 @@ class membaca : AppCompatActivity() {
             }
         } else {
             super.onBackPressed()
+            // Make sure R.anim.slide_in_left and R.anim.slide_out_right exist if you use this
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
         }
     }

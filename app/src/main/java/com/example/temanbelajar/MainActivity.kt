@@ -9,21 +9,22 @@ import android.widget.ImageView
 import android.content.Intent
 import android.widget.LinearLayout
 import android.view.View
-import android.widget.FrameLayout // Pastikan FrameLayout diimpor
+import android.widget.FrameLayout
 import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AlertDialog // Pastikan import ini ada!
 
 class MainActivity : AppCompatActivity() {
 
     private var mediaPlayer: MediaPlayer? = null
     private lateinit var mainContentLayout: LinearLayout
-    private lateinit var fragmentContainer: FrameLayout // Deklarasikan FrameLayout di sini
+    private lateinit var fragmentContainer: FrameLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.utama)
 
         mainContentLayout = findViewById(R.id.main_content_layout)
-        fragmentContainer = findViewById(R.id.fragment_container) // Inisialisasi FrameLayout
+        fragmentContainer = findViewById(R.id.fragment_container)
 
         // Secara default, tampilkan mainContentLayout dan sembunyikan fragmentContainer
         mainContentLayout.visibility = View.VISIBLE
@@ -72,8 +73,8 @@ class MainActivity : AppCompatActivity() {
         btnBelajarAngka.setOnClickListener {
             playAudio(R.raw.belajarangka)
             Toast.makeText(this, "Memutar audio Belajar Angka", Toast.LENGTH_SHORT).show()
-            mainContentLayout.visibility = View.GONE // Sembunyikan layout utama
-            fragmentContainer.visibility = View.VISIBLE // Tampilkan container fragment
+            mainContentLayout.visibility = View.GONE
+            fragmentContainer.visibility = View.VISIBLE
 
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, AngkaFragment())
@@ -96,8 +97,8 @@ class MainActivity : AppCompatActivity() {
         btnBernyanyi.setOnClickListener {
             playAudio(R.raw.bernyanyi)
             Toast.makeText(this, "Memutar audio Bernyanyi", Toast.LENGTH_SHORT).show()
-            mainContentLayout.visibility = View.GONE // Sembunyikan layout utama
-            fragmentContainer.visibility = View.VISIBLE // Tampilkan container fragment
+            mainContentLayout.visibility = View.GONE
+            fragmentContainer.visibility = View.VISIBLE
 
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, BernyanyiFragment())
@@ -105,10 +106,11 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         }
 
+        // --- Perubahan di sini: Mengubah Intent menjadi memanggil fungsi popup ---
         infoIcon.setOnClickListener {
-            val intent = Intent(this, tentangkami::class.java)
-            startActivity(intent)
+            showAboutUsPopup() // Memanggil fungsi untuk menampilkan popup
         }
+        // --- Akhir perubahan ---
     }
 
     private fun playAudio(audioResId: Int) {
@@ -121,6 +123,28 @@ class MainActivity : AppCompatActivity() {
         }
         mediaPlayer?.start()
     }
+
+    // --- Tambahkan fungsi baru ini untuk menampilkan popup ---
+    private fun showAboutUsPopup() {
+        val title = "Tentang kami"
+        val message = """
+            Aplikasi ini merupakan aplikasi edukasi untuk anak-anak yang bertujuan membantu belajar mengeja, mengenal huruf abjad, angka, warna, dan bernyanyi sambil belajar.
+
+            Dibuat oleh:
+            Putri Nuraini
+            Hikmatun Nazilah
+            Clara Putri Andini
+        """.trimIndent() // Menggunakan trimIndent() untuk teks multi-baris yang rapi
+
+        AlertDialog.Builder(this)
+            .setTitle(title)
+            .setMessage(message)
+            .setPositiveButton("OK") { dialog, _ ->
+                dialog.dismiss() // Tutup popup ketika tombol "OK" diklik
+            }
+            .show()
+    }
+    // --- Akhir fungsi baru ---
 
     override fun onDestroy() {
         super.onDestroy()
