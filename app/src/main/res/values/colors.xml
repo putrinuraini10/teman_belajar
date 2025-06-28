@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cream_soft">#FFF5E1</color>
+    <color name="cream_medium">#FFE8C7</color>
+    <color name="cream_dark">#FFD9A6</color>
+
+    <color name="brown_light">#A1866F</color>
+    <color name="brown_medium">#7B5E3C</color>
+    <color name="brown_dark">#4B341E</color>
+
+    <color name="soft_orange">#F2A65A</color>
+    <color name="soft_pink">#F2B5B1</color>
+    <color name="soft_gray">#B0A597</color>
+
+    <color name="purple">#8B5CF6</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_dark">#2D3748</color>
+
+    <color name="background_pink">#FFF0F5</color>
+    <color name="background_start">#FFF5F0</color>
+    <color name="background_end">#FFE8DD</color>
+    <color name="light_pink_almost_white">#FFF0F5</color>
+
+    <color name="dark_blue">#1E3A8A</color>
+    <color name="dark_blue_pressed">#1E40AF</color>
+    <color name="dark_gray">#374151</color>
+    <color name="dark_gray_pressed">#4B5563</color>
+
+    <color name="orange">#F97316</color>
+    <color name="orange_light">#FB923C</color>
+
+    <color name="quiz_correct_green">#4CAF50</color>
+    <color name="quiz_wrong_red">#F44336</color>
+    <color name="quiz_default_orange">#FF9800</color>
+
+</resources>
