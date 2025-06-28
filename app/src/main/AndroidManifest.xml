@@ -36,6 +36,12 @@
             android:label="Membaca">
         </activity>
 
+        <activity
+            android:name=".BelajarAngkaActivity"
+            android:exported="false"
+            android:label="Belajar Angka">
+        </activity>
+
     </application>
 
 </manifest>
