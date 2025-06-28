@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFECEFF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="24dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/logo"
+            android:layout_marginEnd="12dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Huruf Abjad"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="32dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="7"
+            android:layout_marginHorizontal="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_huruf_a"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/a"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf A" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_b"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufb"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf B" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_c"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufc"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf C" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_d"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufd"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf D" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_e"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufe"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf E" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_f"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/huruff"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf F" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_g"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufg"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf G" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_h"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufh"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf H" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_i"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufi"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf I" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_j"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufj"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf J" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_k"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufk"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf K" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_l"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufl"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf L" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_m"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufm"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf M" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_n"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufn"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf N" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_o"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufo"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf O" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_p"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufp"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf P" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_q"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufq"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf Q" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_r"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufr"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf R" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_s"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufs"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf S" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_t"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/huruft"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf T" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_u"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufu"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf U" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_v"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufv"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf V" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_w"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufw"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf W" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_x"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufx"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf X" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_y"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufy"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf Y" />
+
+            <ImageButton
+                android:id="@+id/btn_huruf_z"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/hurufz"
+                android:scaleType="centerInside"
+                android:contentDescription="Huruf Z" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp" />
+
+        </GridLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_keluar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Keluar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/keluar_button_bg"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>
