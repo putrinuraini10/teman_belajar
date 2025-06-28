@@ -9,18 +9,86 @@
     tools:context=".membaca">
 
     <ImageView
-        android:id="@+id/desain_atas_gambar"
-        android:layout_width="343dp"
-        android:layout_height="211dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="Desain Dekorasi Atas"
-        android:src="@drawable/desainatas"
+        android:id="@+id/hiasann"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hiasann"
+        android:contentDescription="Hiasan Background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/desain"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:contentDescription="Desain"
+        android:scaleType="centerCrop"
+        android:src="@drawable/desain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.481" />
+
+    <ImageView
+        android:id="@+id/desainn"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/desainn"
+        android:contentDescription="Desainn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <ImageView
+        android:id="@+id/bawah"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bawah"
+        android:contentDescription="Bawah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/bawahl"
+        android:layout_width="49dp"
+        android:layout_height="94dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bawahl"
+        android:contentDescription="Bawah Kiri"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/hiasann"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/bubble"
+        android:layout_width="47dp"
+        android:layout_height="39dp"
+        android:contentDescription="Bubble"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bubble"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27" />
 
     <ImageView
         android:id="@+id/info_icon"
@@ -39,10 +107,10 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
             android:id="@+id/logo_kecil"
@@ -58,9 +126,9 @@
             android:layout_height="64dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/hurufabjad"
-            android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:gravity="center" />
 
         <Button
             android:id="@+id/btn_mengeja"
@@ -68,43 +136,17 @@
             android:layout_height="64dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/mengeja"
-            android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
-
+            android:textSize="18sp"
+            android:gravity="center" />
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/desain_bawah"
-        android:layout_width="216dp"
-        android:layout_height="154dp"
-        android:contentDescription="Desain Dekorasi Bawah"
-        android:scaleType="fitXY"
-        android:src="@drawable/desainbawah"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/desain_kanan"
-        android:layout_width="67dp"
-        android:layout_height="341dp"
-        android:contentDescription="Desain Dekorasi Kanan"
-        android:src="@drawable/desainkanan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container_membaca"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.example.temanbelajar.AbjadFragment"
-        tools:layout="@layout/fragment_abjad"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:layout="@layout/fragment_abjad" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
