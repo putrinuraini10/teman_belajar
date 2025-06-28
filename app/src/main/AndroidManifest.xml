@@ -26,13 +26,8 @@
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Temanbelajar">
-        </activity>
-
-        <activity
-            android:name=".tentangkami"
-            android:exported="false"
-            android:label="Tentang Kami">
+            android:theme="@style/Theme.Temanbelajar"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
         </activity>
 
         <activity

@@ -9,18 +9,44 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/desain_atas_gambar"
-        android:layout_width="343dp"
-        android:layout_height="211dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="Desain Dekorasi Atas"
-        android:src="@drawable/desainatas"
+        android:id="@+id/hiasann"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hiasann"
+        android:contentDescription="Hiasan Background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/desain"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:contentDescription="Hiasan Background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/desain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.364" />
+
+    <ImageView
+        android:id="@+id/desainn"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:contentDescription="Hiasan Background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/desainn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611" />
 
     <ImageView
         android:id="@+id/info_icon"
@@ -93,31 +119,6 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/desain_bawah"
-        android:layout_width="216dp"
-        android:layout_height="154dp"
-        android:contentDescription="Desain Dekorasi Bawah"
-        android:scaleType="fitXY"
-        android:src="@drawable/desainbawah"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/desain_kanan"
-        android:layout_width="67dp"
-        android:layout_height="341dp"
-        android:contentDescription="Desain Dekorasi Kanan"
-        android:src="@drawable/desainkanan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546" />
-
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
@@ -127,5 +128,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/bawah"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:contentDescription="Hiasan Background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bawah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/bawahl"
+        android:layout_width="49dp"
+        android:layout_height="94dp"
+        android:contentDescription="Hiasan Background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bawahl"
+        app:layout_constraintBottom_toBottomOf="@+id/hiasann"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/bubble"
+        android:layout_width="47dp"
+        android:layout_height="39dp"
+        android:contentDescription="Hiasan Background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bubble"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

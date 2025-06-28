@@ -10,7 +10,6 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentContainerView
-import com.example.temanbelajar.Mengeja1Fragment
 
 class membaca : AppCompatActivity() {
 
@@ -34,7 +33,7 @@ class membaca : AppCompatActivity() {
         }
 
         btnMengeja.setOnClickListener {
-            playAudioAndNavigate(R.raw.mengeja, Mengeja1Fragment())
+            playAudio(R.raw.mengeja)
         }
 
         infoIcon.setOnClickListener {
@@ -79,7 +78,7 @@ class membaca : AppCompatActivity() {
     override fun onBackPressed() {
         if (supportFragmentManager.backStackEntryCount > 0) {
             supportFragmentManager.popBackStack()
-            if (supportFragmentManager.backStackEntryCount == 1) {
+            if (supportFragmentManager.backStackEntryCount == 0) {
                 fragmentContainer.visibility = View.GONE
                 mainContentLayout.visibility = View.VISIBLE
             }
