@@ -34,4 +34,9 @@
 
     <color name="orange">#F97316</color>
     <color name="orange_light">#FB923C</color>
+
+    <color name="quiz_correct_green">#4CAF50</color>
+    <color name="quiz_wrong_red">#F44336</color>
+    <color name="quiz_default_orange">#FF9800</color>
+
 </resources>

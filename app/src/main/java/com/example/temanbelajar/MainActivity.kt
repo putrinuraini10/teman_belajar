@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
         val btnMembaca = findViewById<Button>(R.id.btnmembaca)
         val btnBelajarAngka = findViewById<Button>(R.id.btn_belajarangka)
         val btnMengenalWarna = findViewById<Button>(R.id.btn_mengenalwarna)
-        val btnBernyanyi = findViewById<Button>(R.id.btnbernyanyi)
+        val btnBernyanyi = findViewById<Button>(R.id.btnbernyanyi) // KOREKSI DI SINI
 
         animatedViews.add(btnMembaca)
         animatedViews.add(btnBelajarAngka)
@@ -123,14 +123,9 @@ class MainActivity : AppCompatActivity() {
         btnBelajarAngka.setOnClickListener {
             playAudio(R.raw.belajarangka)
             Toast.makeText(this, "Memutar audio Belajar Angka", Toast.LENGTH_SHORT).show()
-            mainContentLayout.visibility = View.GONE
-            fragmentContainer.visibility = View.VISIBLE
-            setDecorativeImageViewsVisibility(View.GONE)
             stopAllLoopingAnimations()
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, AngkaFragment())
-                .addToBackStack(null)
-                .commit()
+            val intent = Intent(this, BelajarAngkaActivity::class.java)
+            startActivity(intent)
         }
 
         btnMengenalWarna.setOnClickListener {
